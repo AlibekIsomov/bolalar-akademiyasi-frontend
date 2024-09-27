@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -78,21 +78,22 @@
 <div class="main-banner" id="top">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-6">
-        <img src="assets/images/banner-item-01.jpg" alt="Banner Image" class="banner-image">
-      </div>
+
       <div class="col-lg-6">
         <div class="header-text">
-          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+          <h2>Tarbiyali farzandga nima yetsin?</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci deleniti temporibus repellat.</p>
           <div class="buttons">
             <div class="main-button">
-              <a href="#">
+              <a href="#" onclick="openModal()">
                 <i class="fa-solid fa-meteor"></i> Ro'yxatdan o'ting!
               </a>
             </div>
-          </div>
+          </div> 
         </div>
+      </div>
+        <div class="col-lg-6">
+        <img src="assets/images/banner-item-01.jpg" alt="Banner Image" class="banner-image">
       </div>
     </div>
     <div class="row statistics">
@@ -127,56 +128,124 @@
     </div>
   </div>
 </div>
-      
-  <!-- ***** Service action! ***** -->
-  <div class="services section" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-01.png" alt="online degrees" loading="lazy">
-            </div>
+
+
+<div class="team section" id="team">
+  <div class="container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="team-member">
             <div class="main-content">
-              <h4>Online Degrees</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatem molestias magni blanditiis.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
+              <img src="assets/images/member-01.jpg" alt="" loading="lazy">
+              <span class="category">UX Teacher</span>
+              <h4>Sophia Rose</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-02.png" alt="short courses" loading="lazy">
-            </div>
+        <div class="swiper-slide">
+          <div class="team-member">
             <div class="main-content">
-              <h4>Short Courses</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque aut rerum accusantium tempore.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
+              <img src="assets/images/member-02.jpg" alt="" loading="lazy">
+              <span class="category">Graphic Teacher</span>
+              <h4>Cindy Walker</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-03.png" alt="web experts" loading="lazy">
-            </div>
+        <div class="swiper-slide">
+          <div class="team-member">
             <div class="main-content">
-              <h4>Web Experts</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam dolores explicabo ratione!</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
+              <img src="assets/images/member-02.jpg" alt="" loading="lazy">
+              <span class="category">Graphic Teacher</span>
+              <h4>Cindy Walker</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
+        <div class="swiper-slide">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-02.jpg" alt="" loading="lazy">
+              <span class="category">Graphic Teacher</span>
+              <h4>Cindy Walker</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-03.jpg" alt="" loading="lazy">
+              <span class="category">Full Stack Master</span>
+              <h4>David Hutson</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-04.jpg" alt="" loading="lazy">
+              <span class="category">Digital Animator</span>
+              <h4>Stella Blair</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Add more swiper-slide divs as needed -->
       </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <style>
+        .swiper-pagination {
+          bottom: 10px; /* Adjust as needed */
+          text-align: center;
+        }
+      
+        .swiper-button-next,
+        .swiper-button-prev {
+          top: 50%; /* Center vertically */
+          transform: translateY(-100%);
+        }
+      
+        .swiper-button-next {
+          right: 10px; /* Adjust as needed */
+        }
+      
+        .swiper-button-prev {
+          left: 10px; /* Adjust as needed */
+        }
+      </style>
     </div>
   </div>
+</div> 
 
   <div class="section about-us">
     <div class="container">
@@ -247,7 +316,7 @@
     </div>
   </div>
 
-  <section class="section courses" id="courses" >
+  <section class="section courses" id="courses">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -257,98 +326,30 @@
           </div>
         </div>
       </div>
-      <ul class="event_filter">
-        <li>
-          <a class="is_active" href="#!" data-filter="*">Hammasini ko'rsatish</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".design">4-5 yoshgacha</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".development">6-7yoshgacha</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".wordpress">8-14 yoshgacha</a>
-        </li>
-      </ul>
-      <div class="row event_box">
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-01.jpg" alt="" loading="lazy"></a>
-              <span class="category">XA</span>
-              <span class="price"><h6><em>$</em>160</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Lorem, ipsum.</span>
-              <h4>Lorem</h4>
-            </div>
-          </div>
+      <div class="grid-container">
+        <div class="grid-item video-item">
+          <video controls>
+            <source src="assets/videos/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-02.jpg" alt="" loading="lazy"></a>
-              <span class="category">Lorem</span>
-              <span class="price"><h6><em>$</em>340</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Lorem, ipsum.</span>
-              <h4>Lorem</h4>
-            </div>
-          </div>
+        <div class="grid-item photo-item">
+          <img src="assets/images/photo1.jpg" alt="Photo 1" class="img-fluid">
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-03.jpg" alt="" loading="lazy"></a>
-              <span class="category">Wordpress</span>
-              <span class="price"><h6><em>$</em>640</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Lorem, ipsum.</span>
-              <h4>Lorem, ipsum.</h4>
-            </div>
-          </div>
+        <div class="grid-item photo-item">
+          <img src="assets/images/photo2.jpg" alt="Photo 2" class="img-fluid">
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-04.jpg" alt="" loading="lazy"></a>
-              <span class="category">Lorem, ipsum.</span>
-              <span class="price"><h6><em>$</em>450</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Lorem, ipsum.</span>
-              <h4>Lorem, ipsum.</h4>
-            </div>
-          </div>
+        <div class="grid-item video-item">
+          <video controls>
+            <source src="assets/videos/video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-05.jpg" alt="" loading="lazy"></a>
-              <span class="category">Lorem, ipsum.</span>
-              <span class="price"><h6><em>$</em>320</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Lorem, ipsum.</span>
-              <h4>Lorem, ipsum.</h4>
-            </div>
-          </div>
+        <div class="grid-item photo-item">
+          <img src="assets/images/photo3.jpg" alt="Photo 3" class="img-fluid">
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-06.jpg" alt="" loading="lazy"></a>
-              <span class="category">Lorem, ipsum.</span>
-              <span class="price"><h6><em>$</em>240</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Lorem, ipsum.</span>
-              <h4>Lorem, ipsum.</h4>
-            </div>
-          </div>
+        <div class="grid-item photo-item">
+          <img src="assets/images/photo4.jpg" alt="Photo 4" class="img-fluid">
         </div>
       </div>
     </div>
@@ -390,69 +391,6 @@
       </div>
     </div>
   </div>
-
-  <div class="team section" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-01.jpg" alt="" loading="lazy">
-              <span class="category">UX Teacher</span>
-              <h4>Sophia Rose</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-02.jpg" alt="" loading="lazy">
-              <span class="category">Graphic Teacher</span>
-              <h4>Cindy Walker</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-03.jpg" alt="" loading="lazy">
-              <span class="category">Full Stack Master</span>
-              <h4>David Hutson</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-04.jpg" alt="" loading="lazy">
-              <span class="category">Digital Animator</span>
-              <h4>Stella Blair</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
 
   <div class="section testimonials">
     <div class="container">
@@ -605,6 +543,56 @@
     </div>
   </div>
 
+  <!-- ***** Service action! ***** -->
+  <div class="services section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-01.png" alt="online degrees" loading="lazy">
+            </div>
+            <div class="main-content">
+              <h4>Online Degrees</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatem molestias magni blanditiis.</p>
+              <div class="main-button">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-02.png" alt="short courses" loading="lazy">
+            </div>
+            <div class="main-content">
+              <h4>Short Courses</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque aut rerum accusantium tempore.</p>
+              <div class="main-button">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-03.png" alt="web experts" loading="lazy">
+            </div>
+            <div class="main-content">
+              <h4>Web Experts</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam dolores explicabo ratione!</p>
+              <div class="main-button">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="contact-us section" id="contact">
     <div class="container">
       <div class="row">
@@ -612,7 +600,7 @@
           <div class="section-heading">
             <h6>Contact Us</h6>
             <h2>Feel free to contact us anytime</h2>
-            <p>Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of charge. You may support us by sharing our website to your friends.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, eum inventore consequatur eos facere dolores minima ut ex hic nisi?</p>
             <!-- <div class="special-offer">
               <span class="offer">off<br><em>50%</em></span>
               <h6>Valide: <em>24 April 2036</em></h6>
@@ -653,6 +641,39 @@
     </div>
   </div>
 
+  <div id="registrationModal" class="modal">
+    <div class="modal-content">
+      <div class="contact-us-content">
+      <span class="close-button">&times;</span>
+      <h2>Ro'yxatdan o'tish</h2>
+      <form id="contact-form" action="" method="post">
+        <div class="row">
+          <div class="col-lg-12">
+            <fieldset>
+              <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+            </fieldset>
+          </div>
+          <div class="col-lg-12">
+            <fieldset>
+              <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+            </fieldset>
+          </div>
+          <div class="col-lg-12">
+            <fieldset>
+              <textarea name="message" id="message" placeholder="Your Message"></textarea>
+            </fieldset>
+          </div>
+          <div class="col-lg-12">
+            <fieldset>
+              <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <div class="container">
       <div class="col-lg-12">
@@ -663,13 +684,46 @@
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript --> 
-
+ </body>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>|
   <script src="assets/js/custom.js"></script>
-
-
-  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true, // Enable looping
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                }
+            }
+        });
+    });
+  </script>
 </html>

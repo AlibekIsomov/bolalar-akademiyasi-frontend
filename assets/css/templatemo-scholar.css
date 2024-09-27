@@ -13,6 +13,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   padding: 0;
   border: 0;
   outline: 0;
+  height: auto;
 }
 
 .clearfix:after {
@@ -729,7 +730,8 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../images/banner-bg.png);
+  background-color: #ffffff;
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1032,8 +1034,45 @@ Courses Style
 --------------------------------------------- 
 */
 
-.courses {
-  margin-top: 160px;
+.section.courses {
+  padding: 60px 0;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-item video,
+.photo-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
 
 .event_filter {
@@ -1216,12 +1255,97 @@ Facts Style
   margin-top: 15px;
 }
 
+/* Modal */
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  height: 100%;
+  width: 100%;
+}
+
+.modal-content {
+  background-color: #AA9077;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 600px; /* Set a max width for the modal */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.modal-content h2 {
+  color: white;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.close-button {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    margin: 5% auto; /* Less margin on mobile */
+    padding: 15px; /* Less padding on mobile */
+  }
+
+  .close-button {
+    font-size: 24px; /* Smaller close button on mobile */
+  }
+
+  input, textarea {
+    width: 100%; /* Full width for inputs on mobile */
+    padding: 10px; /* Padding for inputs */
+    font-size: 16px; /* Larger font size for readability */
+  }
+
+  button {
+    width: 100%; /* Full width for button on mobile */
+    padding: 12px; /* Padding for button */
+    font-size: 16px; /* Larger font size for readability */
+  }
+}
 /* 
 ---------------------------------------------
 Team Style
 --------------------------------------------- 
 */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
 
 .team {
   margin-top: 100px;
