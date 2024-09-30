@@ -93,14 +93,17 @@ $(window).scroll(function() {
 
 
 	// Menu Dropdown Toggle
-	if($('.menu-trigger').length){
-		$(".menu-trigger").on('click', function() {	
-			$(this).toggleClass('active');
-			$('.header-area .nav').slideToggle(200);
+	$(".menu-trigger").on('click', function() {	
+		$(this).toggleClass('active');
+		$('.header-area .nav').slideToggle(300);
+	});
+
+	// Prevent menu from closing when clicking on links inside the menu
+	document.querySelectorAll('.header-area .nav a').forEach(function(link) {
+		link.addEventListener('click', function(event) {
+			event.stopPropagation(); // Prevent click from bubbling up to the menu trigger
 		});
-	}
-
-
+	});
 	// Menu elevator animation
 	$('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -119,6 +122,8 @@ $(window).scroll(function() {
 			}
 		}
 	});
+
+
 
 	$(document).ready(function () {
 	    $(document).on("scroll", onScroll);
@@ -175,7 +180,7 @@ $(window).scroll(function() {
 		}, 600, function(){
 			setTimeout(function(){
 				$("#preloader").css("visibility", "hidden").fadeOut();
-			}, 300);
+			}, 1000);
 		});
 	});
 
@@ -265,16 +270,64 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function openModal() {
-    document.getElementById("registrationModal").style.display = "block";
-  }
+document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("registrationModal");
+    const openModalButton = document.getElementById("openModalButton");
+    const closeButton = document.querySelector(".close-button");
 
-  document.querySelector(".close-button").onclick = function() {
-    document.getElementById("registrationModal").style.display = "none";
-  }
-
-  window.onclick = function(event) {
-    if (event.target == document.getElementById("registrationModal")) {
-      document.getElementById("registrationModal").style.display = "none";
+    // Function to open the modal
+    function openModal() {
+        modal.style.display = "block"; // Show modal first
+        setTimeout(() => {
+            modal.classList.add("show"); // Add the show class to trigger animation
+        }, 10); // Small timeout to allow display to take effect
     }
-  }
+
+    // Function to close the modal
+    function closeModal() {
+        modal.classList.remove("show"); // Remove the show class to trigger fade-out
+        setTimeout(() => {
+            modal.style.display = "none"; // Hide the modal after the animation
+        }, 300); // Match this duration with the CSS transition duration
+    }
+
+    // Event listeners
+    openModalButton.onclick = function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        openModal();
+    };
+
+    closeButton.onclick = closeModal;
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    };
+});
+
+// Filials
+
+document.addEventListener("DOMContentLoaded", function() {
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1, // Number of slides to show
+        spaceBetween: 10, // Space between slides
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2, // Show 2 slides on small screens
+            },
+            768: {
+                slidesPerView: 3, // Show 3 slides on medium screens
+            },
+        },
+    });
+});
