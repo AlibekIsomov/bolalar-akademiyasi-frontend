@@ -16,8 +16,8 @@ figure, header, nav, section, article, aside, footer, figcaption {
   height: auto;
 }
 body{
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .clearfix:after {
@@ -118,7 +118,7 @@ body {
 }
 
 .section-heading h2 {
-  font-size: 3.75rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-transform: capitalize;
   margin: 20px 0;
@@ -144,8 +144,10 @@ body {
 }
 
 .banner-image {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+  padding-bottom:100px;
+  margin-left: 15%;
 }
 
 .header-text {
@@ -156,12 +158,14 @@ body {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
+  color:#ffffff
 }
 
 .header-text p {
-  font-size: 1.125rem;
+  font-size: 1.225rem;
   line-height: 1.75rem;
   margin-bottom: 30px;
+  color:#ffffff
 }
 
 .main-button a {
@@ -188,8 +192,8 @@ body {
 
 @media (max-width: 992px) {
   .main-banner {
-    padding: 50px 0 100px 0; /* Adjust bottom padding for smaller screens */
-    margin-bottom:  40rem;
+    /* padding: 200px 0 200px 0; Adjust bottom padding for smaller screens */
+    /* margin-bottom:  20rem; */
   }
 
   .header-text h2 {
@@ -201,8 +205,12 @@ body {
   }
   
   .banner-image {
-    max-width:100%;
-    height: 100%;
+    max-width:90%;
+    height: 80%;
+
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
   }
 }
 
@@ -216,6 +224,7 @@ Filials
 .filials {
   padding: 20px;
   background-color: #f9f9f9; /* Background color */
+  overflow: hidden; /* Prevent horizontal overflow */
 }
 
 .filials h2 {
@@ -279,11 +288,10 @@ Statistics
 
 
 .statistics {
-  margin-top: 100px;
+  margin-bottom: 50rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 40px;
 }
 
 .stat-card {
@@ -295,6 +303,7 @@ Statistics
   transition: all 0.3s ease;
   position: relative;
   height: 100%;
+  display: block;
 }
 
 .stat-card h3 {
@@ -341,7 +350,7 @@ Statistics
 @media (max-width: 992px) {
   .statistics {
     padding: auto;
-    margin-top: 9rem;
+    margin-bottom: 20rem;
   }
   
   .stat-card {
@@ -428,6 +437,7 @@ Header Style
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
+  width: 100%;
 }
 
 .header-area {
@@ -465,6 +475,8 @@ Header Style
   margin-left: 8rem;
   padding-left: 10px;
   border-left: 1px solid rgba(250, 250, 250, 0.3);
+  border-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 .background-header .main-nav .logo,
@@ -555,7 +567,7 @@ Header Style
 }
 .header-area .main-nav .nav li a.active {
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.10);
+  background: linear-gradient(37.55deg, #0d99ff 19.62%, #22b1ec 20.46%);;
   opacity: 1;
 }
 
@@ -755,9 +767,10 @@ Header Style
     padding: 0px;
   }
   .header-area .logo {
-    margin-left: 0px;
-    margin-top: 30px;
+    margin-left: -10px;
+    margin-top: 15px;
   }
+
   .header-area .menu-trigger {
     display: block !important;
   }
@@ -1219,6 +1232,7 @@ Courses Style
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
+  
 }
 
 .events_item .thumb span.price em {
@@ -1438,7 +1452,7 @@ Team Style
 }
 
 .team {
-  margin-top: 100px;
+  margin-top: 400px;
   padding-top: 140px;
   display: flex;
   flex-wrap: wrap; /* Allow wrapping for mobile */
@@ -1514,8 +1528,10 @@ Team Style
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .team-member {
-    margin-bottom: 20px; /* Add some space between team members */
+    /* margin-bottom: 20px; Add some space between team members */
     width: calc(100% - 20px); /* Use calc to account for margins */
+    display: block;
+    margin-top: 40rem;
   }
 
   .team-member .main-content {
@@ -1649,7 +1665,7 @@ Events Style
   background-color: #f1f0fe;
   border-radius: 25px;
   position: relative;
-  padding: 40px;
+  padding: 45px;
   margin-bottom: 96px;
 }
 
@@ -1667,16 +1683,17 @@ Events Style
 
 .events .item ul li {
   display: inline-block;
-  width: 17.5%;
-  vertical-align: middle;
+  width: 10.5%;
+  vertical-align: text-top;
+  margin-right: 20px;
 }
 
 .events .item ul li:first-child {
-  width: 35%;
+  width: 25%;
 }
 
-.events .item ul li:nth-of-type(2) {
-  width: 28%;
+.events .item ul li:nth-of-type(3) {
+  width: 20%;
 }
 
 .events .item ul li span.category {
@@ -1684,7 +1701,7 @@ Events Style
   text-transform: uppercase;
   color: #AA9077;
   background-color: #fff;
-  padding: 8px 20px;
+  padding: 5px 15 px;
   border-radius: 25px;
   font-weight: 500;
   display: inline-block;
@@ -1955,43 +1972,58 @@ Footer Style
 */
 
 footer {
-  margin-top: 150px;
-  position: relative;
-  background-color: #AA9077;
-  vertical-align: middle;
-  min-height: 150px;
-  border-radius: 150px 150px 0px 0px;
+  background-color: #AA9077; /* Dark background for the footer */
+  color: #fff; /* White text color */
+  padding: 20px 0; /* Padding for top and bottom */
 }
 
-footer p {
-  text-align: center;
-  line-height: 150px;
-  color: #fff;
-  font-weight: 400;
+.footer-menu {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 10px 0; /* Margin for spacing */
 }
 
-footer p a {
-  color: #fff;
-  transition: all .3s;
-  position: relative;
-  z-index: 3;
+.footer-menu li {
+  display: inline; /* Display items inline */
+  margin-right: 15px; /* Space between menu items */
 }
 
-footer p a:hover {
-  opacity: 0.75;
+.footer-menu a {
+  color: #fff; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
-footer::before {
-  background: url(../images/contact-dec-01.png);
-  position: absolute;
-  left: 30px;
-  transform: rotate(180deg);
-  opacity: 1;
-  bottom: 0;
-  width: 318px;
-  height: 119px;
-  content: '';
-  z-index: 2;
+.footer-menu a:hover {
+  color: #f39c12; /* Change color on hover */
+}
+
+.social-media {
+  margin-bottom: 10px; /* Space below social media icons */
+}
+
+.social-media a {
+  color: #fff; /* White color for social media icons */
+  margin-right: 15px; /* Space between icons */
+  font-size: 20px; /* Size of the icons */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-media a:hover {
+  color: #f39c12; /* Change color on hover */
+}
+
+.register-button {
+  background-color: #f39c12; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.register-button:hover {
+  background-color: #e67e22; /* Darker shade on hover */
 }
 
 /* 
@@ -2010,6 +2042,7 @@ body {
   }
   .header-area .main-nav .logo h1 {
     border-right: none;
+    margin-bottom: 5px;
   }
   .main-banner .item {
     padding: 80px 30px 120px 30px !important;
@@ -2032,7 +2065,7 @@ body {
     display: none;
   }
   .header-area .main-nav .logo h1 {
-    font-size: 34px;
+    font-size: 25px;
   }
   .header-area .main-nav .logo {
     border-right: none;
@@ -2183,6 +2216,7 @@ body {
   }
   .events .item ul li h6 {
     font-size: 14px;
+    margin-right: -50px;
   }
   .contact-us {
     padding-top: 20px;

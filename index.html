@@ -21,11 +21,10 @@
     <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   </head>
 
 <body>
@@ -45,24 +44,20 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                      <img src="assets/images/logo.png"Bolalar akademiyasi Logo" style="width: 20%; height: 40%; vertical-align: middle; margin-right: 10px;">
-                      <h1>Bolalar akademiyasi</h1>
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Serach Start ***** -->
-                    <!-- <div class="search-input">
- </div> -->
+                    <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                      <img src="assets/images/brand.png" alt="Bolalar akademiyasi Logo" style="max-width: 35px; height: auto; margin-right: 10px; margin-bottom: 20px;">
+                      <h1 style="margin: 0;">Bolalar akademiyasi</h1>
+                  </a>
                    
                     <!-- ***** Serach Start ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                      <li class="scroll-to-section"><a href="#services">Services</a></li>
-                      <li class="scroll-to-section"><a href="#courses">Courses</a></li>
-                      <li class="scroll-to-section"><a href="#team">Team</a></li>
-                      <li class="scroll-to-section"><a href="#events">Events</a></li>
-                      <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
+                      <li class="scroll-to-section"><a href="#top" class="active">Asosiy</a></li>
+                      <li class="scroll-to-section"><a href="#team">O'qituvchilarimiz</a></li>
+                      <li class="scroll-to-section"><a href="#about-us">Biz haqimizda</a></li>
+                      <li class="scroll-to-section"><a href="#courses">Lavhalar</a></li>
+                      <li class="scroll-to-section"><a href="#comments">Izohlar</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Hoziroq ro'yxatdan o'ting!</a></li>
                   </ul>   
                   <a class='menu-trigger'>
                     <span>Menu</span>
@@ -82,8 +77,9 @@
 
       <div class="col-lg-6">
         <div class="header-text">
-          <h2>Tarbiyali farzandga nima yetsin?</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci deleniti temporibus repellat.</p>
+          <h2>IT TEXNOLOGIYA<br> VA BIZNES AKADEMIYASI</h2>
+          <p>21-asrda sun'iy intelekt, robotlar, uchadigan apparatlar,
+             avtomatlashtirilgan ishlar chiqarishlar va shunga o'xshash yo'nalishlar o'zbekistonimizda juda ham zaifdir. Lekin akademiyamiz bunga shunchaki e'tiborsiz qarab o'tiraolmaydi.</p>
           <div class="buttons">
             <div class="main-button">
               <a href="#" id="openModalButton">
@@ -94,35 +90,35 @@
         </div>
       </div>
         <div class="col-lg-6">
-        <img src="assets/images/banner-item-01.jpg" alt="Banner Image" class="banner-image">
+        <img src="assets/images/kid.png" alt="Banner Image" class="banner-image">
       </div>
     </div>
     <div class="row statistics">
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="stat-card stat-card-1">
           <div class="color-indicator"></div>
-          <h3>9+</h3>
-          <p>Yil tajribasi</p>
+          <h3>3+</h3>
+          <p>Yil tajriba</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="stat-card stat-card-2">
           <div class="color-indicator"></div>
-          <h3>50,000+</h3>
+          <h3>2,000+</h3>
           <p>Hozirgi o'quvchilar soni</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="stat-card stat-card-3">
           <div class="color-indicator"></div>
-          <h3>14</h3>
-          <p>Filiallarimiz butun O'zbekiston bo'yicha</p>
+          <h3>2</h3>
+          <p>Filiallarimiz butun Qashqadaryo bo'yicha</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="stat-card stat-card-4">
           <div class="color-indicator"></div>
-          <h3>500+</h3>
+          <h3>1,500+</h3>
           <p>Muvaffaqiyatli tugatgan o'quvchilarimiz</p>
         </div>
       </div>
@@ -248,7 +244,7 @@
   </div>
 </div> 
 
-  <div class="section about-us">
+  <div class="section about-us" id="about-us">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-1">
@@ -256,48 +252,57 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Where shall we begin?
+                  Nimaga IT texonologiya?
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                  Bilaman <strong>juda ko'p</strong> ota va onalar shunday  <code>savol</code> beradilar. Birinchi sabab; o'zlarini shunday o'qishlariga imkoniyat bo'lmagan,
+                  ikinchi sabab; farzandlarining qanday talanti borligini bilishmydilar, uchinchi sabab esa ota onalarimizning hammalari ham It texnologiya va uning qanday foydali ekanligi
+                  va zamon talab etayotkanligi hali qo'liq tushunib yetishmagan, Sababi esa, bola o'zini iqtidorini ko'rsataolmagan.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  How do we work together?
+                  Nimaga Biznes?
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                 <strong>Biznesga</strong> keladigan bo'lsak, biznes - bu olib sotarlar emas. Haqiqiy biznes. Bu bir inson o'zini mahorati va bilimi bilan. Odamlarni bir joyga to'plab.
+                 Ulardan katta jamoa yaratib o'zini yurtini rivojlanishini istaydigan, Yurtiga katta foyda keltiruvchi haqiqiy O'zbek. <code></code>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Why SCHOLAR is the best?
+                 Akademiya qanday rivojlangan?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  There are more than one hundred responsive HTML templates to choose from <strong>Template</strong>Mo website. You can browse by different tags or categories.
+                  <strong>2021-yil</strong> biz-ish faoliyatimizni 30 ta o'quvchi bilan boshlaganmiz va hozirgi kunda, bir yil davomida 250ta farzandni tarbiyalab kelmoqdamiz va 2024-2025 yilda 
+                  biz ikki baravar o'sishga reja qilganmiz.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Do we get the best support?
+                  Boshqalardan farqingiz nima?
                 </button>
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  You can also search on Google with specific keywords such as <code>templatemo business templates, templatemo gallery templates, admin dashboard templatemo, 3-column templatemo, etc.</code>
+                  Birinchi o'rinda tarbiya darsiga alohida utoz birkitirilgan<br>
+                  Bizda Har hfta ochiq darslar va har 2 oyda oraliq imtihonlar olinadi.<br>
+                  Akademiyada barcha fanlar alohida ustozlarga ajratilgan.<br>
+                  Online nazorat platformasi.<br>
+                  Har bir bolaga individual yondashuv<br>
+                  Ota va onalar uchun seminarlar<br>
                 </div>
               </div>
             </div>
@@ -305,11 +310,14 @@
         </div>
         <div class="col-lg-5 align-self-center">
           <div class="section-heading">
-            <h6>About Us</h6>
-            <h2>What make us the best academy online?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
+            <h6>Biz haqimizda</h6>
+            <h2>Bizning kuchli tomonlarimiz.</h2>
+            <p>      
+            Bizning akademiyamizda tarbiya va ta'limga katta e'tibor qaratilib, har bir bolaga individual yondashuv qo'llaniladi. IT texnologiya va biznes sohalariga ixtisoslashgan holda, zamonaviy bilimlar beramiz. Jamoamiz yosh, iqtidorli, mahoratli va mehnatsevar ustozlardan iborat.
+            Farzandingizning tarbiyali, bilimli va madaniyatli bo'lib voyaga yetishi uchun barcha zarur shart-sharoitlar yaratib berilgan.
+            </p>
             <div class="main-button">
-              <a href="#">Discover More</a>
+              <a href="#">Ko'proq bilib oling</a>
             </div>
           </div>
         </div>
@@ -322,8 +330,8 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <h6>Latest Courses</h6>
-            <h2>Latest Courses</h2>
+            <h6>Lavhalar</h6>
+            <!-- <h2> lavha</h2> -->
           </div>
         </div>
       </div>
@@ -364,26 +372,26 @@
             <div class="row">
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
-                   <p class="count-text ">Happy Students</p>
+                  <h2 class="timer count-title count-number" data-to="1950" data-speed="1000"></h2>
+                   <p class="count-text ">Muvaffaqiyatli yakunlagan o'quvchilar</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
-                  <p class="count-text ">Course Hours</p>
+                  <h2 class="timer count-title count-number" data-to="20" data-speed="1000"></h2>
+                  <p class="count-text ">O'quv xonalar</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
                   <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
-                  <p class="count-text ">Employed Students</p>
+                  <p class="count-text ">Ustozlar</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter end">
-                  <h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
-                  <p class="count-text ">Years Experience</p>
+                  <h2 class="timer count-title count-number" data-to="10" data-speed="1000"></h2>
+                  <p class="count-text ">Tajribamiz</p>
                 </div>
               </div>
             </div>
@@ -393,42 +401,46 @@
     </div>
   </div>
 
-  <div class="section testimonials">
+  <div class="section testimonials" id="comments">
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
           <div class="owl-carousel owl-testimonials">
             <div class="item">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi labore corporis provident nostrum aspernatur ipsam nam vitae unde amet.</p>
+              <p>Akademiyaga farzandimni olib kelganimdan juda mamnunman. Bu yerda bolalarga bo'lgan e'tibor va alohida yondashuv meni hayratga soldi. O'qituvchilar yosh va iqtidorli bo'lib, bolalarning bilim olish jarayonini yanada qiziqarli va samarali qiladi. Ayniqsa, IT va biznes sohalariga qaratilgan darslar zamonaviy bo'lib, farzandimning kelajagi uchun juda foydali deb hisoblayman.</p>
               <div class="author">
                 <img src="assets/images/testimonial-author.jpg" alt="" loading="lazy">
-                <span class="category">Full Stack Master</span>
-                <h4>Claude David</h4>
+                <span class="category">Ota</span>
+                <h4>Isomov Alibek</h4>
               </div>
             </div>
             <div class="item">
-              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
+              <p>Akademiyaga qadam qo'yganimizdan boshlab farzandimning rivojlanishi va bilim olishidagi o'zgarishlarni darhol sezdik.
+                 Darslar qiziqarli va interaktiv tarzda o'tkazilib, har bir bolaga alohida e'tibor qaratiladi. Jamoa yosh va tajribali ustozlardan iborat bo'lib, ular har doim bolalarning qiziqishlarini rag'batlantirib, ularga qo'llab-quvvatlash ko'rsatishadi. Akademiya farzandimning nafaqat bilimli, balki madaniyatli va tarbiyali bo'lib voyaga yetishishida katta yordam beradi.
+              </p>
               <div class="author">
                 <img src="assets/images/testimonial-author.jpg" alt="" loading="lazy">
-                <span class="category">UI Expert</span>
-                <h4>Thomas Jefferson</h4>
+                <span class="category">Ona</span>
+                <h4>Lola Jabbarova</h4>
               </div>
             </div>
             <div class="item">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe necessitatibus porro consequatur asperiores non cumque laborum provident repellat accusantium qui?</p>
+              <p>Bu akademiyada farzandimning har tomonlama rivojlanishini ko'rib, juda xursandman. Ayniqsa, IT texnologiya va biznes darslari bolalarning kelajakka qiziqishini oshiradi. O'qituvchilar professionalligi va bolalarga bo'lgan mehribonligi juda yuqori darajada. Farzandim akademiyaga katta ishtiyoq bilan keladi va har kuni yangi narsalarni o'rganayotganidan faxrlanadi.
+                 Men uchun muhim bo'lgan narsa – uning tarbiyali, bilimli va madaniyatli bo'lib ulg'ayishi uchun barcha sharoitlar yaratilganligi.
+              </p>
               <div class="author">
                 <img src="assets/images/testimonial-author.jpg" alt="" loading="lazy">
-                <span class="category">Digital Animator</span>
-                <h4>Stella Blair</h4>
+                <span class="category">Ona</span>
+                <h4>Sarvinoz Oyqulova</h4>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-5 align-self-center">
           <div class="section-heading">
-            <h6>TESTIMONIALS</h6>
-            <h2>What they say about us?</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque incidunt blanditiis porro sint recusandae delectus quis voluptas odio dicta dolor!</p>
+            <h6>Izohlar</h6>
+            <h2>Biz haqimizda nima deyishadi?</h2>
+            <p>Biz akademiyamiz uchun har bir ota-onaning fikri judayam muhim deb hisoblaymiz!</p>
           </div>
         </div>
       </div>
@@ -453,29 +465,141 @@
                 </div>
               </div>
               <div class="col-lg-9">
-                <ul>
-                  <li>
-                    <span class="category">Web Design</span>
-                    <h4>UI Best Practices</h4>
-                  </li>
-                  <li>
-                    <span>Date:</span>
-                    <h6>16 Feb 2036</h6>
-                  </li>
-                  <li>
-                    <span>Duration:</span>
-                    <h6>22 Hours</h6>
-                  </li>
-                  <li>
-                    <span>Price:</span>
-                    <h6>$120</h6>
-                  </li>
-                </ul>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
+                  <ul>
+                    <li>
+                      <span class="category">Почемучка</span>
+                      <h4>Dars 4-soat</h4>
+                    </li>
+                    <li>
+                      <span>Yoshi:</span>
+                      <h6>5+</h6>
+                    </li>
+                    <li>
+                      <span>Fanlar:</span>
+                      <h6>Yozish <br>O'qish <br>Mental arifmetika <br> tarbiya darslari</h6>
+                    </li>
+                    <li>
+                      <span>Izoh:</span>
+                      <h6>Bolalar eng asosiy kbilimlarini o'rganishadi.</h6>
+                    </li>
+                    <li>
+                      <span>To'lov:</span>
+                      <h6>750,000 so'm</h6>
+                    </li>
+                  </ul>
+                  <a href="#"><i class="fa fa-angle-right"></i></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          <div class="col-lg-12 col-md-6">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="image">
+                    <img src="assets/images/event-02.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul>
+                    <li>
+                      <span class="category">0-sinf</span>
+                      <h4>Dars 8 soat</h4>
+                    </li>
+                    <li>
+                      <span>Yoshi:</span>
+                      <h6>6+</h6>
+                    </li>
+                    <li>
+                      <span>Fanlar:</span>
+                      <h6>Mental arifmetika<br> Yapon tili<br> Robototexnika<br> Tarbiya darslari</h6>
+                    </li>
+                    <li>
+                      <span>Izoh:</span>
+                      <h6>Bolalar 1-sinf mavzularini o'rganib borishadi</h6>
+                    </li>
+                    <li>
+                      <span>Narxi:</span>
+                      <h6>1,390,000 so'm</h6>
+                    </li>
+                  </ul>
+                  <a href="#"><i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-6">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="image">
+                    <img src="assets/images/event-03.jpg" alt="" loading="lazy">
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul>
+                    <li>
+                      <span class="category">1-sinf</span>
+                      <h4>Dars 8 soat</h4>
+                    </li>
+                    <li>
+                      <span>Yoshi:</span>
+                      <h6>7+</h6>
+                    </li>
+                    <li>
+                      <span>Fanlar:</span>
+                      <h6>Mental arifmetka<br>Yapon tili<br>RObototexnika<br>Tarbiya darslari<br>It texnologiya</h6>
+                    </li>
+                    <li>
+                      <span>Izoh:</span>
+                      <h6>Bolalar 2-3 sinf manzilarini o'rganib boshlashadi</h6>
+                    </li>
+                    <li>
+                      <span>Narxi:</span>
+                      <h6>1,590,000</h6>
+                    </li>
+                  </ul>
+                  <a href="#"><i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-6">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="image">
+                    <img src="assets/images/event-02.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul>
+                    <li>
+                      <span class="category">2-sinf</span>
+                      <h4>Dars 9 soat</h4>
+                    </li>
+                    <li>
+                      <span>Yoshi:</span>
+                      <h6>8+</h6>
+                    </li>
+                    <li>
+                      <span>Fanlar:</span>
+                      <h6>Mental arifmetika<br> Yapon tili<br> Robototexnika<br> Tarbiya darslari</h6>
+                    </li>
+                    <li>
+                      <span>Izoh:</span>
+                      <h6>Bolalar 2-3-sinf mavzularini o'rganib borishadi</h6>
+                    </li>
+                    <li>
+                      <span>Narxi:</span>
+                      <h6>1,690,000 so'm</h6>
+                    </li>
+                  </ul>
+                  <a href="#"><i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="col-lg-12 col-md-6">
           <div class="item">
             <div class="row">
@@ -487,112 +611,156 @@
               <div class="col-lg-9">
                 <ul>
                   <li>
-                    <span class="category">Front End</span>
-                    <h4>New Design Trend</h4>
+                    <span class="category">3-4-sinf</span>
+                    <h4>Dars 10 soat</h4>
                   </li>
                   <li>
-                    <span>Date:</span>
-                    <h6>24 Feb 2036</h6>
+                    <span>Yoshi:</span>
+                    <h6>9+</h6>
                   </li>
                   <li>
-                    <span>Duration:</span>
-                    <h6>30 Hours</h6>
+                    <span>Fanlar:</span>
+                    <h6>Mental arifmetika<br> Yapon tili<br> Robototexnika<br> Tarbiya darslari<br>Xitoy tili</h6>
                   </li>
                   <li>
-                    <span>Price:</span>
-                    <h6>$320</h6>
+                    <span>Izoh:</span>
+                    <h6>Bolalar 4-5-sinf mavzularini o'rganib borishadi</h6>
+                  </li>
+                  <li>
+                    <span>Narxi:</span>
+                    <h6>1,890,000 so'm</h6>
                   </li>
                 </ul>
                 <a href="#"><i class="fa fa-angle-right"></i></a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="image">
-                  <img src="assets/images/event-03.jpg" alt="" loading="lazy">
+          <div class="col-lg-12 col-md-6">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="image">
+                    <img src="assets/images/event-02.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul>
+                    <li>
+                      <span class="category">4-sinf</span>
+                      <h4>Dars 10 soat</h4>
+                    </li>
+                    <li>
+                      <span>Yoshi:</span>
+                      <h6>9+</h6>
+                    </li>
+                    <li>
+                      <span>Fanlar:</span>
+                      <h6>Mental arifmetika<br> Yapon tili<br> Robototexnika<br> Tarbiya darslari<br>Xitoy tili</h6>
+                    </li>
+                    <li>
+                      <span>Izoh:</span>
+                      <h6>Bolalar 4-5-sinf mavzularini o'rganib borishadi</h6>
+                    </li>
+                    <li>
+                      <span>Narxi:</span>
+                      <h6>1,990,000 so'm</h6>
+                    </li>
+                  </ul>
+                  <a href="#"><i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
-              <div class="col-lg-9">
-                <ul>
-                  <li>
-                    <span class="category">Full Stack</span>
-                    <h4>Web Programming</h4>
-                  </li>
-                  <li>
-                    <span>Date:</span>
-                    <h6>12 Mar 2036</h6>
-                  </li>
-                  <li>
-                    <span>Duration:</span>
-                    <h6>48 Hours</h6>
-                  </li>
-                  <li>
-                    <span>Price:</span>
-                    <h6>$440</h6>
-                  </li>
-                </ul>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- ***** Service action! ***** -->
-  <div class="services section" id="services">
+  <!-- <div class="photo-collection section" id="photo-collection">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-01.png" alt="online degrees" loading="lazy">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="photo-item">
+                    <div class="photo" style="background-image: url('assets/images/photo-01.jpg');"></div>
+                </div>
             </div>
-            <div class="main-content">
-              <h4>Online Degrees</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatem molestias magni blanditiis.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="photo-item">
+                    <div class="photo" style="background-image: url('assets/images/photo-02.jpg');"></div>
+                </div>
             </div>
-          </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="photo-item">
+                    <div class="photo" style="background-image: url('assets/images/photo-03.jpg');"></div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-02.png" alt="short courses" loading="lazy">
-            </div>
-            <div class="main-content">
-              <h4>Short Courses</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque aut rerum accusantium tempore.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-03.png" alt="web experts" loading="lazy">
-            </div>
-            <div class="main-content">
-              <h4>Web Experts</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam dolores explicabo ratione!</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+</div>
+
+<style>
+    .photo-collection {
+        overflow: hidden;
+    }
+
+    .photo-item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .photo {
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        background-size: cover;
+        background-position: center;
+        animation: rotate 20s infinite linear; /* Earth-like rotation */
+    }
+
+    @keyframes rotate {
+        0% { transform: rotateY(0deg); }
+        100% { transform: rotateY(360deg); }
+    }
+</style> -->
+
+<!-- <div class="photo-collection section" id="photo-collection">
+  <div class="container">
+      <div class="photo-slider">
+          <div class="photo-item" style="background-image: url('assets/images/banner-item-01.jpg');"></div>
+          <div class="photo-item" style="background-image: url('assets/images/banner-item-01.jpg');"></div>
+          <div class="photo-item" style="background-image: url('assets/images/banner-item-01.jpg');"></div>
+          <div class="photo-item" style="background-image: url('assets/images/banner-item-01.jpg');"></div>
+          <div class="photo-item" style="background-image: url('assets/images/banner-item-01.jpg');"></div>
+          <div class="photo-item" style="background-image: url('assets/images/banner-item-01.jpg');"></div>
+      </div>
   </div>
+</div>
+
+<style>
+  .photo-collection {
+      overflow: hidden;
+      position: relative;
+      width: 100%; /* Full width */
+      height: 300px; /* Set a height for the collection */
+  }
+
+  .photo-slider {
+      display: flex; /* Use flexbox to align items in a row */
+      animation: slide 30s linear infinite; /* Animation for sliding effect */
+  }
+
+  .photo-item {
+      min-width: 100%; /* Each photo takes full width */
+      height: 100%; /* Full height of the container */
+      background-size: cover;
+      background-position: center;
+  }
+
+  @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); } /* Move one full width to the left */
+  }
+</style> -->
 
   <section class="filials">
     <div class="col-lg-12 text-center">
@@ -609,10 +777,12 @@
                     <p>Chilonzor tumani, Xalqalar do'stligi metro bekati.</p>
                     <div class="map-links">
                         <a href="https://www.google.com/maps" target="_blank">
-                            <img src="path/to/google-icon.png" alt="Google Maps">
-                        </a>
+                    <svg  width="64px" height="64px" viewBox="-12 -12 48.00 48.00" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24000000000000005"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:#1a73e8;}.cls-2{fill:#ea4335;}.cls-3{fill:#4285f4;}.cls-4{fill:#fbbc04;}.cls-5{fill:#34a853;}</style> </defs> <g transform="scale(1.03, 1.03), translate(3.5, 0)"> <path class="cls-1" d="M14.45.78A8.09,8.09,0,0,0,5.8,3.29L9.63,6.51Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-2" d="M5.8,3.29a8.07,8.07,0,0,0-1.89,5.2,9.06,9.06,0,0,0,.8,3.86L9.63,6.51Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-3" d="M12,5.4a3.09,3.09,0,0,1,3.1,3.09,3.06,3.06,0,0,1-.74,2l4.82-5.73a8.12,8.12,0,0,0-4.73-4L9.63,6.51A3.07,3.07,0,0,1,12,5.4Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-4" d="M12,11.59a3.1,3.1,0,0,1-3.1-3.1,3.07,3.07,0,0,1,.73-2L4.71,12.35A28.67,28.67,0,0,0,8.38,17.6l6-7.11A3.07,3.07,0,0,1,12,11.59Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-5" d="M14.25,19.54c2.7-4.22,5.84-6.14,5.84-11a8.1,8.1,0,0,0-.91-3.73L8.38,17.6c.46.6.92,1.24,1.37,1.94C11.4,22.08,10.94,23.6,12,23.6S12.6,22.08,14.25,19.54Z" transform="translate(-3.91 -0.4)"></path> </g> </g>
+                      <span>Google Maps</span>
+                    </svg>                        </a>
                         <a href="https://yandex.com/maps" target="_blank">
-                            <img src="path/to/yandex-icon.png" alt="Yandex Maps">
+                          <svg width="64px" height="64px" viewBox="-99.84 -99.84 391.68 391.68" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M95.997 22a58.897 58.897 0 0 0-32.772 9.985 59.174 59.174 0 0 0-21.728 26.56 59.386 59.386 0 0 0-3.368 34.191 59.269 59.269 0 0 0 16.125 30.312c10.688 10.722 35.841 26.232 37.33 42.525.223 2.434 1.987 4.427 4.413 4.427s4.196-1.993 4.413-4.427c1.488-16.293 26.622-31.777 37.304-42.492a59.274 59.274 0 0 0 16.151-30.313 59.383 59.383 0 0 0-3.354-34.205 59.176 59.176 0 0 0-21.73-26.574A58.897 58.897 0 0 0 95.997 22v0Z"></path><path stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M95.997 101.6a20.806 20.806 0 0 1-14.708-6.092 20.8 20.8 0 1 1 14.708 6.092v0Z"></path></g></svg>
+                          <span>Yandex maps</span>
                         </a>
                     </div>
                 </div>
@@ -622,12 +792,14 @@
                     <h3>Filial 2</h3>
                     <p>Chilonzor tumani, Xalqalar do'stligi metro bekati</p>
                     <div class="map-links">
-                        <a href="https://www.google.com/maps" target="_blank">
-                            <img src="path/to/google-icon.png" alt="Google Maps">
-                        </a>
-                        <a href="https://yandex.com/maps" target="_blank">
-                            <img src="path/to/yandex-icon.png" alt="Yandex Maps">
-                        </a>
+                      <a href="https://www.google.com/maps" target="_blank">
+                        <svg  width="64px" height="64px" viewBox="-12 -12 48.00 48.00" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24000000000000005"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:#1a73e8;}.cls-2{fill:#ea4335;}.cls-3{fill:#4285f4;}.cls-4{fill:#fbbc04;}.cls-5{fill:#34a853;}</style> </defs> <g transform="scale(1.03, 1.03), translate(3.5, 0)"> <path class="cls-1" d="M14.45.78A8.09,8.09,0,0,0,5.8,3.29L9.63,6.51Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-2" d="M5.8,3.29a8.07,8.07,0,0,0-1.89,5.2,9.06,9.06,0,0,0,.8,3.86L9.63,6.51Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-3" d="M12,5.4a3.09,3.09,0,0,1,3.1,3.09,3.06,3.06,0,0,1-.74,2l4.82-5.73a8.12,8.12,0,0,0-4.73-4L9.63,6.51A3.07,3.07,0,0,1,12,5.4Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-4" d="M12,11.59a3.1,3.1,0,0,1-3.1-3.1,3.07,3.07,0,0,1,.73-2L4.71,12.35A28.67,28.67,0,0,0,8.38,17.6l6-7.11A3.07,3.07,0,0,1,12,11.59Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-5" d="M14.25,19.54c2.7-4.22,5.84-6.14,5.84-11a8.1,8.1,0,0,0-.91-3.73L8.38,17.6c.46.6.92,1.24,1.37,1.94C11.4,22.08,10.94,23.6,12,23.6S12.6,22.08,14.25,19.54Z" transform="translate(-3.91 -0.4)"></path> </g> </g>
+                          <span>Google Maps</span>
+                        </svg>                        </a>
+                            <a href="https://yandex.com/maps" target="_blank">
+                              <svg width="64px" height="64px" viewBox="-99.84 -99.84 391.68 391.68" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M95.997 22a58.897 58.897 0 0 0-32.772 9.985 59.174 59.174 0 0 0-21.728 26.56 59.386 59.386 0 0 0-3.368 34.191 59.269 59.269 0 0 0 16.125 30.312c10.688 10.722 35.841 26.232 37.33 42.525.223 2.434 1.987 4.427 4.413 4.427s4.196-1.993 4.413-4.427c1.488-16.293 26.622-31.777 37.304-42.492a59.274 59.274 0 0 0 16.151-30.313 59.383 59.383 0 0 0-3.354-34.205 59.176 59.176 0 0 0-21.73-26.574A58.897 58.897 0 0 0 95.997 22v0Z"></path><path stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M95.997 101.6a20.806 20.806 0 0 1-14.708-6.092 20.8 20.8 0 1 1 14.708 6.092v0Z"></path></g></svg>
+                              <span>Yandex maps</span>
+                            </a>
                     </div>
                 </div>
             </div>
@@ -636,12 +808,14 @@
                   <h3>Filial 1</h3>
                   <p>Chilonzor tumani, Xalqalar do'stligi metro bekati.</p>
                   <div class="map-links">
-                      <a href="https://www.google.com/maps" target="_blank">
-                          <img src="path/to/google-icon.png" alt="Google Maps">
-                      </a>
-                      <a href="https://yandex.com/maps" target="_blank">
-                          <img src="path/to/yandex-icon.png" alt="Yandex Maps">
-                      </a>
+                    <a href="https://www.google.com/maps" target="_blank">
+                      <svg  width="64px" height="64px" viewBox="-12 -12 48.00 48.00" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24000000000000005"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:#1a73e8;}.cls-2{fill:#ea4335;}.cls-3{fill:#4285f4;}.cls-4{fill:#fbbc04;}.cls-5{fill:#34a853;}</style> </defs> <g transform="scale(1.03, 1.03), translate(3.5, 0)"> <path class="cls-1" d="M14.45.78A8.09,8.09,0,0,0,5.8,3.29L9.63,6.51Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-2" d="M5.8,3.29a8.07,8.07,0,0,0-1.89,5.2,9.06,9.06,0,0,0,.8,3.86L9.63,6.51Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-3" d="M12,5.4a3.09,3.09,0,0,1,3.1,3.09,3.06,3.06,0,0,1-.74,2l4.82-5.73a8.12,8.12,0,0,0-4.73-4L9.63,6.51A3.07,3.07,0,0,1,12,5.4Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-4" d="M12,11.59a3.1,3.1,0,0,1-3.1-3.1,3.07,3.07,0,0,1,.73-2L4.71,12.35A28.67,28.67,0,0,0,8.38,17.6l6-7.11A3.07,3.07,0,0,1,12,11.59Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-5" d="M14.25,19.54c2.7-4.22,5.84-6.14,5.84-11a8.1,8.1,0,0,0-.91-3.73L8.38,17.6c.46.6.92,1.24,1.37,1.94C11.4,22.08,10.94,23.6,12,23.6S12.6,22.08,14.25,19.54Z" transform="translate(-3.91 -0.4)"></path> </g> </g>
+                        <span>Google Maps</span>
+                      </svg>                        </a>
+                          <a href="https://yandex.com/maps" target="_blank">
+                            <svg width="64px" height="64px" viewBox="-99.84 -99.84 391.68 391.68" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M95.997 22a58.897 58.897 0 0 0-32.772 9.985 59.174 59.174 0 0 0-21.728 26.56 59.386 59.386 0 0 0-3.368 34.191 59.269 59.269 0 0 0 16.125 30.312c10.688 10.722 35.841 26.232 37.33 42.525.223 2.434 1.987 4.427 4.413 4.427s4.196-1.993 4.413-4.427c1.488-16.293 26.622-31.777 37.304-42.492a59.274 59.274 0 0 0 16.151-30.313 59.383 59.383 0 0 0-3.354-34.205 59.176 59.176 0 0 0-21.73-26.574A58.897 58.897 0 0 0 95.997 22v0Z"></path><path stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M95.997 101.6a20.806 20.806 0 0 1-14.708-6.092 20.8 20.8 0 1 1 14.708 6.092v0Z"></path></g></svg>
+                            <span>Yandex maps</span>
+                          </a>
                   </div>
               </div>
           </div>
@@ -650,21 +824,23 @@
                 <h3>Filial 1</h3>
                 <p>Chilonzor tumani, Xalqalar do'stligi metro bekati.</p>
                 <div class="map-links">
-                    <a href="https://www.google.com/maps" target="_blank">
-                        <img src="path/to/google-icon.png" alt="Google Maps">
-                    </a>
-                    <a href="https://yandex.com/maps" target="_blank">
-                        <img src="path/to/yandex-icon.png" alt="Yandex Maps">
-                    </a>
+                  <a href="https://www.google.com/maps" target="_blank">
+                    <svg  width="64px" height="64px" viewBox="-12 -12 48.00 48.00" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24000000000000005"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:#1a73e8;}.cls-2{fill:#ea4335;}.cls-3{fill:#4285f4;}.cls-4{fill:#fbbc04;}.cls-5{fill:#34a853;}</style> </defs> <g transform="scale(1.03, 1.03), translate(3.5, 0)"> <path class="cls-1" d="M14.45.78A8.09,8.09,0,0,0,5.8,3.29L9.63,6.51Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-2" d="M5.8,3.29a8.07,8.07,0,0,0-1.89,5.2,9.06,9.06,0,0,0,.8,3.86L9.63,6.51Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-3" d="M12,5.4a3.09,3.09,0,0,1,3.1,3.09,3.06,3.06,0,0,1-.74,2l4.82-5.73a8.12,8.12,0,0,0-4.73-4L9.63,6.51A3.07,3.07,0,0,1,12,5.4Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-4" d="M12,11.59a3.1,3.1,0,0,1-3.1-3.1,3.07,3.07,0,0,1,.73-2L4.71,12.35A28.67,28.67,0,0,0,8.38,17.6l6-7.11A3.07,3.07,0,0,1,12,11.59Z" transform="translate(-3.91 -0.4)"></path> <path class="cls-5" d="M14.25,19.54c2.7-4.22,5.84-6.14,5.84-11a8.1,8.1,0,0,0-.91-3.73L8.38,17.6c.46.6.92,1.24,1.37,1.94C11.4,22.08,10.94,23.6,12,23.6S12.6,22.08,14.25,19.54Z" transform="translate(-3.91 -0.4)"></path> </g> </g>
+                      <span>Google Maps</span>
+                    </svg>                        </a>
+                        <a href="https://yandex.com/maps" target="_blank">
+                          <svg width="64px" height="64px" viewBox="-99.84 -99.84 391.68 391.68" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M95.997 22a58.897 58.897 0 0 0-32.772 9.985 59.174 59.174 0 0 0-21.728 26.56 59.386 59.386 0 0 0-3.368 34.191 59.269 59.269 0 0 0 16.125 30.312c10.688 10.722 35.841 26.232 37.33 42.525.223 2.434 1.987 4.427 4.413 4.427s4.196-1.993 4.413-4.427c1.488-16.293 26.622-31.777 37.304-42.492a59.274 59.274 0 0 0 16.151-30.313 59.383 59.383 0 0 0-3.354-34.205 59.176 59.176 0 0 0-21.73-26.574A58.897 58.897 0 0 0 95.997 22v0Z"></path><path stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M95.997 101.6a20.806 20.806 0 0 1-14.708-6.092 20.8 20.8 0 1 1 14.708 6.092v0Z"></path></g></svg>
+                          <span>Yandex maps</span>
+                        </a>
                 </div>
             </div>
         </div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Navigation -->
+        <!-- <div class="swiper-pagination"></div>
+
         <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-prev"></div> -->
     </div>
 </section>
 
@@ -676,36 +852,30 @@
             <h6>Contact Us</h6>
             <h2>Feel free to contact us anytime</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, eum inventore consequatur eos facere dolores minima ut ex hic nisi?</p>
-            <!-- <div class="special-offer">
-              <span class="offer">off<br><em>50%</em></span>
-              <h6>Valide: <em>24 April 2036</em></h6>
-              <h4>Special Offer <em>50%</em> OFF!</h4>
-              <a href="#"><i class="fa fa-angle-right"></i></a>
-            </div> -->
           </div>
         </div>
         <div class="col-lg-6">
           <div class="contact-us-content">
-            <form id="contact-form" action="" method="post">
+            <form id="contact-form" action="" method="get" onsubmit="return false;">
               <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                   <fieldset>
-                    <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="To'liq ismingiz" required="">
                   </fieldset>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-md-12">
                   <fieldset>
-                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                    <input name="phone-number" type="tel" class="form-control" id="phone-number" placeholder="Telefon raqamingiz" pattern="\+998-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
                   </fieldset>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-md-12">
                   <fieldset>
-                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                      <input name="age" type="text" class="form-control" id="age" placeholder="Bolangiz yoshi" required="">
                   </fieldset>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-md-12">
                   <fieldset>
-                    <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+                    <button type="submit" id="form-submit" class="button">Ro'yxatdan o'tish</button>
                   </fieldset>
                 </div>
               </div>
@@ -718,7 +888,7 @@
 
   <div id="registrationModal" class="modal">
     <div class="modal-content">
-        <span class="close-button">&times;</span>
+        <span class="close-button" style="color: #fff;">&times;</span>
         <h2>Ro'yxatdan o'tish</h2>
         <form id="contact-form" action="" method="post">
             <div class="row">
@@ -748,13 +918,32 @@
 </div>
 
 
-  <footer>
-    <div class="container">
-      <div class="col-lg-12">
-        <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="" rel="nofollow" target="_blank"></a> Distribution: <a href=" rel="nofollow" target="_blank"></a></p>
+<footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <p>Copyright © 2036 Scholar Organization. All rights reserved.</p>
+              <ul class="footer-menu">
+                  <li><a href="#about-us">About Us</a></li>
+                  <li><a href="#courses">Courses</a></li>
+                  <li><a href="#team">Our Team</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-6 text-right">
+              <div class="social-media">
+                  <a href="https://www.facebook.com" target="_blank" rel="nofollow"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.twitter.com" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.linkedin.com" target="_blank" rel="nofollow"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a>
+              </div>
+              <div class="main-button">
+                  <a href="#registrationModal" class="register-button">Register Now</a>
+              </div>
+          </div>
       </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript --> 
