@@ -270,6 +270,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("registrationModal");
     const openModalButton = document.getElementById("openModalButton");
@@ -305,6 +306,9 @@ document.addEventListener("DOMContentLoaded", function() {
             closeModal();
         }
     };
+
+    // Open modal automatically after 15 seconds
+    setTimeout(openModal, 15000); // 15 seconds (15000 milliseconds)
 });
 
 // Filials
